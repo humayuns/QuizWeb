@@ -21,9 +21,11 @@ function loadQuestionsFromInput() {
     const jsonInput = document.getElementById("json-input");
 
     // save input to localstorage
-    localStorage.setItem("json-input", jsonInput.value);
 
-    questions = JSON.parse(jsonInput.value);
+    let str = htmlEncode(jsonInput.value)
+    localStorage.setItem("json-input", str);
+
+    questions = JSON.parse(str);
     attempts = new Array(questions.length).fill(false);
     displayQuestion();
 }
@@ -137,3 +139,9 @@ window.onload = function() {
     loadQuestions();
     }
 };
+
+
+function htmlEncode(str) {
+    return str.replace(/</g, '&lt;')
+              .replace(/>/g, '&gt;');
+}
