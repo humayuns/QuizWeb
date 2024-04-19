@@ -1,0 +1,52 @@
+[
+    {
+        "question": "Which Python library is commonly used for handling missing data in datasets?",
+        "answers": ["Matplotlib", "NumPy", "Pandas", "Sys"],
+        "correct": 3
+    },
+    {
+        "question": "What is the primary function in Pandas used to fill missing values in a DataFrame?",
+        "answers": ["fillna()", "replace()", "dropna()", "isnull()"],
+        "correct": 1
+    },
+    {
+        "question": "Which method is typically used in Python to interpolate missing numerical data points in a time series?",
+        "answers": ["Linear regression", "K-nearest neighbors", "Polynomial interpolation", "Linear interpolation"],
+        "correct": 4
+    },
+    {
+        "question": "In the context of Python, what is the common tool used for interactive computing and coding for data analysis tasks like imputation?",
+        "answers": ["Visual Studio Code", "Jupyter Notebook", "PyCharm", "Notepad++"],
+        "correct": 2
+    },
+    {
+        "question": "Which Python function is utilized to assess the presence of missing values in a data frame?",
+        "answers": ["isna()", "isnull()", "has_null()", "none()"],
+        "correct": 2
+    },
+    {
+        "question": "In machine learning, which scikit-learn estimator can be used for imputing missing values using the mean, median, or mode?",
+        "answers": ["SimpleImputer", "FillImputer", "MissingImputer", "DataImputer"],
+        "correct": 1
+    },
+    {
+        "question": "What is a critical first step before implementing any imputation technique on a dataset?",
+        "answers": ["Normalizing the data", "Identifying outliers", "Visualizing the data distribution", "Scaling the data"],
+        "correct": 3
+    },
+    {
+        "question": "Which Python package is primarily used for statistical modeling and has functions to handle missing data?",
+        "answers": ["TensorFlow", "Scikit-learn", "StatsModels", "Keras"],
+        "correct": 3
+    },
+    {
+        "question": "What is a common approach to handle missing categorical data in Python?",
+        "answers": ["Padding", "Tokenization", "One-hot encoding", "Mode imputation"],
+        "correct": 4
+    },
+    {
+        "question": "What tool in Colab can be used to ensure code cells are executed in sequence automatically?",
+        "answers": ["Auto-run", "Sequence Executor", "Run All", "Cell Scheduler"],
+        "correct": 3
+    }
+]

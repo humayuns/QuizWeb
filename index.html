@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="quiz-container">
+    <h1>Quiz</h1>
+    <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+        <span id="progress-text"></span>
+    </div>
+    <div class="question-container">
+        <div id="question-number" class="question-number"></div>
+        <div id="question" class="question"></div>
+    </ul>
+    <ul>
+        <li><input type="radio" name="answer" value="1" id="ans1"><label for="ans1" id="label1"><span class="emoji"></span></label></li>
+        <li><input type="radio" name="answer" value="2" id="ans2"><label for="ans2" id="label2"><span class="emoji"></span></label></li>
+        <li><input type="radio" name="answer" value="3" id="ans3"><label for="ans3" id="label3"><span class="emoji"></span></label></li>
+        <li><input type="radio" name="answer" value="4" id="ans4"><label for="ans4" id="label4"><span class="emoji"></span></label></li>
+    </ul>
+    <div class="buttons">
+        <button onclick="previousQuestion()">Previous</button>
+        <button onclick="nextQuestion()">Next</button>
+        <input type="text" id="json-input" onclick="this.select()">
+        <button onclick="loadQuestionsFromInput()">Load</button>
+    </div>
+    <div id="result"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
