@@ -22,7 +22,7 @@ function loadQuestionsFromInput() {
 
     // save input to localstorage
 
-    let str = htmlEncode(jsonInput.value)
+    let str = formatCode(jsonInput.value)
     localStorage.setItem("json-input", str);
 
     questions = JSON.parse(str);
@@ -37,7 +37,7 @@ function displayQuestion() {
     const progressText = document.getElementById("progress-text");
 
     // Displaying the question text and progress
-    questionContainer.textContent = question.question;
+    questionContainer.innerHTML = question.question;
     progressText.textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
 
     // Display each answer with a span for emoji feedback
@@ -140,8 +140,17 @@ window.onload = function() {
     }
 };
 
-
+/*
 function htmlEncode(str) {
     return str.replace(/</g, '&lt;')
               .replace(/>/g, '&gt;');
+}
+*/
+
+function formatCode(code) {
+    let formattedCode = code;
+    formattedCode = formattedCode.replace(/</g, '&lt;'); // Replace < with &lt;
+    formattedCode = formattedCode.replace(/>/g, '&gt;'); // Replace > with &gt;
+    formattedCode = formattedCode.replace(/\n/g, '<br>'); // Replace newline characters with <br>
+    return formattedCode;
 }
